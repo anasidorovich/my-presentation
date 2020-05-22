@@ -1,0 +1,23 @@
+section
+  section
+    div(class='sl-block')
+      div(class='sl-block-content')
+        h1 A stateful component
+  section
+        h2 Stateful / Container / Smart component
+        ul(class='component')
+          li keeps track of changing data
+        pre
+          code(class='hljs javascript')
+            |  class Main extends Component {
+            |    constructor() {
+            |      super()
+            |      this.state = {
+            |        books: []
+            |      }
+            |    }
+            |    render() {
+            |      &lt;BooksList&nbsp;books={this.state.books}/&gt;
+            |    }
+            |  }
+

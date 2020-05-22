@@ -1,0 +1,13 @@
+section
+  section
+    div(class='sl-block')
+      div(class='sl-block-content')
+        h1 Virtual DOM
+  section
+        h2 Virtual DOM
+        ul
+          li The virtual DOM is used for efficient re-rendering of the DOM
+          li React aims to re-render the virtual tree only when the state changes
+          li Uses 2 virtual trees (new and previous) to find differences and batch update real DOM
+          li Observes data changes (setState) and does dirty-checking to know when to re-render component
+          li Whenever possible, does not update entire component in real DOM - only computes a patch operation that updates part of the DOM

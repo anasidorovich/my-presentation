@@ -1,0 +1,33 @@
+section
+  section
+    div(class='sl-block')
+      div(class='sl-block-content')
+        h1 Component
+  section
+        h2 Component
+        p Components are self-contained reusable building blocks of web application.
+        p React components are basically just idempotent functions (same input produces same output).
+        p They describe your UI at any point in time, just like a server-rendered app.
+  section
+        ul
+          li Created using React.createClass()
+          li The only required method is render()
+          li Inserted into DOM using ReactDOM.render()
+        pre
+          code(class='hljs javascript')
+            |  class Application extends React.Component {
+            |    render() {
+            |      return <div>
+            |        <h1>Hello, ES6 and React!</h1>
+            |      </div>;
+            |    }
+            |  }
+            |
+            |  ReactDOM.render(&lt;App/&gt;, document.getElementById('app'));
+  section
+        h2 Types of React Components
+        ul
+          li Functional Components
+          li Class Components
+          li Pure Components
+          li Higher-Order Components

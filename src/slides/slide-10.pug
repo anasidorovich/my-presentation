@@ -1,0 +1,40 @@
+section
+  section
+    div(class='sl-block')
+      div(class='sl-block-content')
+        h1 State
+  section
+        h2 State
+        ul
+          li Represents internal state of the component
+          li Accessed via this.state
+          li When a component's state data changes, the rendered markup will be updated by re-invoking render() method
+  section
+        pre(class='state')
+          code(class='hljs javascript')
+            |  class App extends React.Component {
+            |    constructor (props) {
+            |      super(props);
+            |      this.state = {
+            |        name: 'Anastasiya'
+            |      };
+            |    }
+            |
+            |    clickComp = () => {
+            |      let newState = {
+            |        name: this.state.name + 'click'
+            |      }
+            |      this.setState(newState);
+            |    };
+            |
+            |    render () {
+            |      return (
+            |        <div onClick={this.clickComp}>
+            |          {this.state.name}
+            |        </div>
+            |      );
+            |    }
+            |
+            |  }
+            |
+            |  ReactDOM.render(&lt;App/&gt;, document.getElementById('app'));

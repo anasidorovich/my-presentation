@@ -1,0 +1,20 @@
+section
+  section
+    div(class='sl-block')
+      div(class='sl-block-content')
+        h1 A stateless component
+  section
+        h2 Stateless / Presentational / Dumb component
+        ul(class='component')
+          li prints out what is given to them via props
+        pre
+          code(class='hljs javascript')
+            |  const BooksList = ({books}) => {
+            |    return (
+            |      <ul>
+            |        {books.map(book => {
+            |          return <li>book</li>
+            |        })}
+            |      </ul>
+            |    )
+            |  }

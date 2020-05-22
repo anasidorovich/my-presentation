@@ -1,0 +1,25 @@
+section
+  section
+    div(class='sl-block')
+      div(class='sl-block-content')
+        h1 JSX
+  section
+        h2 JSX
+        ul
+          li Arguably, one of the coolest things in React
+          li XML-like syntax for generating component's HTML
+          li Easier to read and understand large DOM trees
+          li Translates to plain JavaScript using react-tools
+        pre
+          code(class='hljs javascript')
+              | function PetList(props) {
+              |   const pets = props.pets;
+              |   const listItems = pets.map((p) =>
+              |     <li key={p.id}>
+              |       {p.name}
+              |      </li>
+              |   );
+              |   return (
+              |     <ul>{listItems}</ul>
+              |   );
+              | }
